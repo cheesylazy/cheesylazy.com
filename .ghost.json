@@ -1,10 +1,10 @@
 {
   "development": {
     "apiUrl": "https://cheesy-lazy.herokuapp.com",
-    "contentApiKey": "abcdefg13456789123456789"
+    "contentApiKey": "a99aa0d2462bd23c1c2f44c6d3"
   },
   "production": {
     "apiUrl": "https://cheesy-lazy.herokuapp.com",
-    "contentApiKey": "abcdefg13456789123456789"
+    "contentApiKey": "a99aa0d2462bd23c1c2f44c6d3"
   }
 }
