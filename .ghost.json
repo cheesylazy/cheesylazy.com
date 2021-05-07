@@ -8,3 +8,16 @@
     "contentApiKey": "a99aa0d2462bd23c1c2f44c6d3"
   }
 }
+"mail": {
+    "transport": "SMTP",
+    "options": {
+      "service": "Mailgun",
+      "host": "smtp.mailgun.org",
+      "port": 587,
+      "secureConnection": false,
+      "auth": {
+        "user": "postmaster@sandbox1c883d48fa01423191b223bfac7829ef.mailgun.org",
+        "pass": "230a0cc6f0d5152ae8fc0a1b893f472f-2a9a428a-dd987edb"
+      }
+    }
+  }
