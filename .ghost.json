@@ -8,6 +8,7 @@
     "contentApiKey": "a99aa0d2462bd23c1c2f44c6d3"
   }
 }
+
 "mail": {
     "transport": "SMTP",
     "options": {
