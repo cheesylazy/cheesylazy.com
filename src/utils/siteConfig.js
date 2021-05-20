@@ -7,7 +7,7 @@ module.exports = {
     shareImageHeight: 523, // Change to the height of your default share image
 
     shortTitle: `Ghost`, // Used for App manifest e.g. Mobile Home Screen
-    siteIcon: favicon.png
+    siteIcon: 'favicon.png'
     backgroundColor: `#e9e9e9`, // Used for Offline Manifest
     themeColor: `#15171A`, // Used for Offline Manifest
 }
