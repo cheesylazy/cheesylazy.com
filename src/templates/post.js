@@ -34,7 +34,9 @@ const Post = ({ data, location }) => {
                             </figure> : null }
                         <section className="post-full-content">
                             <h1 className="content-title">{post.title}</h1>
-
+                            <section id="clapper">
+                <applause-button style="width: 58px; height: 58px" color="#3f9dff"></applause-button>
+                            </section>  
                             {/* The main post content */ }
                             <section
                                 className="content-body load-external-scripts"
