@@ -39,7 +39,6 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                            <div id="app"></div>
                         </section>
                     </article>
                 </div>
