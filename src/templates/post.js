@@ -9,24 +9,6 @@ import { MetaData } from '../components/common/meta'
 import React from 'react';
 import ClapButton from 'react-clap-button';
 
-export default () => {
-
-    const onCountChange = ({ count, countTotal }) => {
-
-    };
-    // All Props are Optional
-    return (
-        <ClapButton
-            count={0}
-            countTotal={0}
-            maxCount={50}
-            isClicked={false}
-            onCountChange={onCountChange}
-            iconComponent={props => <CustomIcon {...props} size={38} /> }
-        />
-    );
-}
-
 /**
 * Single post view (/:slug)
 *
@@ -91,3 +73,20 @@ export const postQuery = graphql`
         }
     }
 `
+export default () => {
+
+    const onCountChange = ({ count, countTotal }) => {
+
+    };
+    // All Props are Optional
+    return (
+        <ClapButton
+            count={0}
+            countTotal={0}
+            maxCount={50}
+            isClicked={false}
+            onCountChange={onCountChange}
+            iconComponent={props => <CustomIcon {...props} size={38} /> }
+        />
+    );
+}
