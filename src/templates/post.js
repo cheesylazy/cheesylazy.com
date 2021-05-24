@@ -40,7 +40,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <applause-button/></applause-button>
+                    <applause-button/></applause-button>
                     </article>
                 </div>
             </Layout>
