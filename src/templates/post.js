@@ -6,14 +6,6 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
-import { Provider } from '@lyket/react';
-
-ReactDOM.render(
-  <Provider apiKey="0f99e632331c7746c1a90bed092717">
-    <App />
-  </Provider>,
-  document.getElementById('root')
-);
 /**
 * Single post view (/:slug)
 *
@@ -48,7 +40,6 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <ClapButton id="diy-fish-holder" namespace="post" />
                     </article>
                 </div>
             </Layout>
