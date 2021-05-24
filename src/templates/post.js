@@ -6,6 +6,27 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
+import React from 'react';
+import ClapButton from 'react-clap-button';
+
+export default () => {
+
+    const onCountChange = ({ count, countTotal }) => {
+
+    };
+    // All Props are Optional
+    return (
+        <ClapButton
+            count={0}
+            countTotal={0}
+            maxCount={50}
+            isClicked={false}
+            onCountChange={onCountChange}
+            iconComponent={props => <CustomIcon {...props} size={38} /> }
+        />
+    );
+}
+
 /**
 * Single post view (/:slug)
 *
@@ -39,10 +60,15 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                            <section className="clapper">
-                                <applause-button></applause-button>
-                            </section>  
                         </section>
+                        <Clap
+                         count={0}
+                        countTotal={0}
+                        iconComponent={function(props){return react_default.a.createElement(Icon,ClapIcon_extends({xmlns:"http://www.w3.org/2000/svg",viewBox:"-549 338 100.1 125"},props),ClapIcon_ref2,ClapIcon_ref3)}}
+                         isClicked={false}
+                        maxCount={50}
+                        onCountChange={function onCountChange(){}}
+                        />
                     </article>
                 </div>
             </Layout>
