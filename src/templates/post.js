@@ -42,9 +42,6 @@ const Post = ({ data, location }) => {
                         </section>
                     </article>
                 </div>
-                <div className="social">
-                    <applause-button>
-                    </applause-button></div>
             </Layout>
         </>
     )
