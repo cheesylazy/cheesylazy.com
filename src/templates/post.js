@@ -39,14 +39,7 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                            <ClapButton
-                             count={0}
-                            countTotal={0}
-                            maxCount={50}
-                            isClicked={false}
-                            onCountChange={onCountChange}
-                            iconComponent={props => <CustomIcon {...props} size={38} /> }
-                            />
+                            <div id="app"></div>
                         </section>
                     </article>
                 </div>
