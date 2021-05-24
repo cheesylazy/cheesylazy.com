@@ -40,9 +40,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <applause-button
-                        color={{ site.accent_color | default:'rgb(79,177,186)' }}
-                        url={{ site.url }}{{ page.url }} >
+                        <applause-button>
                         </applause-button>
                     </article>
                 </div>
