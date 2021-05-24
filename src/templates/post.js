@@ -39,13 +39,13 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                            <Clap
-                                count={0}
-                                countTotal={0}
-                                iconComponent={function(props){return react_default.a.createElement(Icon,ClapIcon_extends({xmlns:"http://www.w3.org/2000/svg",viewBox:"-549 338 100.1 125"},props),ClapIcon_ref2,ClapIcon_ref3)}}
-                                isClicked={false}
-                                maxCount={9999}
-                                onCountChange={function onCountChange(){}}
+                            <ClapButton
+                             count={0}
+                            countTotal={0}
+                            maxCount={50}
+                            isClicked={false}
+                            onCountChange={onCountChange}
+                            iconComponent={props => <CustomIcon {...props} size={38} /> }
                             />
                         </section>
                     </article>
