@@ -5,7 +5,6 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
-import { ApplauseButton } from '../../applause-button'
 
 /**
 * Single post view (/:slug)
