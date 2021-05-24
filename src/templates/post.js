@@ -6,9 +6,6 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
-import React from 'react';
-import ClapButton from 'react-clap-button';
-
 /**
 * Single post view (/:slug)
 *
@@ -43,8 +40,6 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <Clap
-                        />
                     </article>
                 </div>
             </Layout>
@@ -73,20 +68,3 @@ export const postQuery = graphql`
         }
     }
 `
-export default () => {
-
-    const onCountChange = ({ count, countTotal }) => {
-
-    };
-    // All Props are Optional
-    return (
-        <ClapButton
-            count={0}
-            countTotal={0}
-            maxCount={50}
-            isClicked={false}
-            onCountChange={onCountChange}
-            iconComponent={props => <CustomIcon {...props} size={38} /> }
-        />
-    );
-}
