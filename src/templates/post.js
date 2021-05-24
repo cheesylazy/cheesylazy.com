@@ -41,8 +41,6 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    <applause-button style="width: 58px; height: 58px" color="#3f9dff">
-                    </applause-button>
                 </div>
             </Layout>
         </>
