@@ -62,12 +62,6 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                         <Clap
-                         count={0}
-                        countTotal={0}
-                        iconComponent={function(props){return react_default.a.createElement(Icon,ClapIcon_extends({xmlns:"http://www.w3.org/2000/svg",viewBox:"-549 338 100.1 125"},props),ClapIcon_ref2,ClapIcon_ref3)}}
-                         isClicked={false}
-                        maxCount={50}
-                        onCountChange={function onCountChange(){}}
                         />
                     </article>
                 </div>
