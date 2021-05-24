@@ -39,10 +39,12 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
-                            <applause-button></applause-button>
                         </section>
                     </article>
                 </div>
+                <div className="social">
+                    <applause-button>
+                    </applause-button></div>
             </Layout>
         </>
     )
