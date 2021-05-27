@@ -49,7 +49,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 <div className="site-mast-right">
                                     { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
                                     { site.facebook && <a href={ facebookUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
-                                    <a className="site-nav-item" href={ `https://www.instagram.com/cheesylazy.jeju/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="file:///C:/Users/jason/AppData/Local/Temp/instagram.svg" alt="Instagram" /></a>
+                                    <a className="site-nav-item" href={ `https://www.instagram.com/cheesylazy.jeju/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" img src="/images/icons/instagram.svg" alt="Instagram" /></a>
                                 </div>
                             </div>
                             { isHome ?
