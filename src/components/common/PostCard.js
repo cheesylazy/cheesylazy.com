@@ -31,7 +31,7 @@ const PostCard = ({ post }) => {
                     <span>{ post.primary_author.name }</span>
                 </div>
                 <div className="post-published-date">
-                    {post.published-date}
+                    {post.published_at}
                 </div>
                 <div className="post-card-footer-right">
                     <div>{readingTime}</div>
