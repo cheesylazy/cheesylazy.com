@@ -706,7 +706,7 @@ h6 {
 .site-banner {
     max-width: 80%;
     margin: 0 auto;
-    padding: 10vw 0;
+    padding: 5vw 0;
     text-align: center;
 }
 
@@ -730,6 +730,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 100px 0 0 0;
 }
 
 .site-nav-left {
