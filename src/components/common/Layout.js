@@ -29,6 +29,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
+                <meta name="naver-site-verification" content="5e7fa25992bb9a118927d8a44f9653962feab5f5" />
             </Helmet>
 
             <div className="viewport">
