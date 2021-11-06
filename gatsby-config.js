@@ -181,6 +181,7 @@ module.exports = {
                 createLinkInHead: true,
                 addUncaughtPages: true,
             },
+        resolve: `gatsby-theme-ghost-commento`
         },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
@@ -188,8 +189,3 @@ module.exports = {
         `gatsby-plugin-offline`,
     ],
 }
-plugins: [
-    {
-        resolve: `gatsby-theme-ghost-commento`,
-    },
-]
