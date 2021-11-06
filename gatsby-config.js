@@ -165,6 +165,7 @@ module.exports = {
                     },
                     allGhostTag: {
                         sitemap: `tags`,
+                    },
                     allGhostAuthor: {
                         sitemap: `authors`,
                     },
@@ -181,7 +182,7 @@ module.exports = {
                 createLinkInHead: true,
                 addUncaughtPages: true,
             },
-        resolve: `gatsby-theme-ghost-commento`
+        resolve: `gatsby-theme-ghost-commento`,
         },
         `gatsby-plugin-catch-links`,
         `gatsby-plugin-react-helmet`,
