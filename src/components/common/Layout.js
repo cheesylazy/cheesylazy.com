@@ -45,7 +45,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                             : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
                                         }
                                     </Link>
-                                    <meta name="naver-site-verification" content="5e7fa25992bb9a118927d8a44f9653962feab5f5" />
                                 </div>
                                 <div className="site-mast-right">
                                     { site.twitter && <a href={ twitterUrl } className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/twitter.svg" alt="Twitter" /></a>}
