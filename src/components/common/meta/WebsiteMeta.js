@@ -52,6 +52,7 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
             <Helmet>
                 <title>{title}</title>
                 <meta name="description" content={description} />
+                <meta name="naver-site-verification" content="5e7fa25992bb9a118927d8a44f9653962feab5f5" />
                 <link rel="canonical" href={canonical} />
                 <meta property="og:site_name" content={settings.title} />
                 <meta property="og:type" content="website" />
