@@ -165,7 +165,6 @@ module.exports = {
                     },
                     allGhostTag: {
                         sitemap: `tags`,
-                    },
                     allGhostAuthor: {
                         sitemap: `authors`,
                     },
@@ -192,5 +191,10 @@ module.exports = {
 plugins: [
     {
         resolve: `gatsby-theme-ghost-commento`,
+        options: {
+            // The url pointing to your self-hosted commento installation
+            // You can remove the option, if you use the commento.io managed service
+            url: `https://cdn.commento.io`,
+        },
     },
 ]
