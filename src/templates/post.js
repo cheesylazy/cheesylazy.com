@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
-
+import React, { useEffect } from 'react'
 /**
 * Single post view (/:slug)
 *
@@ -41,7 +41,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    <Comments />
+                    <Comments/>
                 </div>
             </Layout>
         </>
