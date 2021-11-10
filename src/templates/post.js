@@ -40,9 +40,8 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
+                    <Commento id={data.strapiArticles.id} />
                 </div>
-                <script defer src="https://cdn.commento.io/js/commento.js"></script>
-                <div id="commento"></div>
             </Layout>
         </>
     )
