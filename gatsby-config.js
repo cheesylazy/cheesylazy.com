@@ -66,6 +66,9 @@ module.exports = {
                     ? ghostConfig.development
                     : ghostConfig.production,
         },
+        {
+            resolve: `gatsby-theme-ghost-commento`,
+        },
         /**
          *  Utility Plugins
          */
@@ -188,9 +191,4 @@ module.exports = {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
     ],
-    plugins: [
-        {
-            resolve: `gatsby-theme-ghost-commento`,
-        },
-    ]
 }
