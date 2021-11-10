@@ -188,4 +188,9 @@ module.exports = {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
     ],
+    plugins: [
+        {
+            resolve: `gatsby-theme-ghost-commento`,
+        },
+    ]
 }
