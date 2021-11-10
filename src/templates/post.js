@@ -39,7 +39,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <Commento id={data.strapiArticles.id} />
+                        <script defer src="https://cdn.commento.io/js/commento.js"></script>
                     </article>
                 </div>
             </Layout>
