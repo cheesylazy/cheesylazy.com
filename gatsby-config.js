@@ -189,8 +189,3 @@ module.exports = {
         `gatsby-plugin-offline`,
     ],
 }
-plugins: [
-    {
-        resolve: `gatsby-theme-ghost-commento`,
-    },
-]
