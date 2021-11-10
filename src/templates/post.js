@@ -40,7 +40,8 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
-                        <Commento id={uniquePostId} /> 
+                        <script defer src="https://cdn.commento.io/js/commento.js"></script>
+                        <div id="commento"></div>
                     </article>
                 </div>
             </Layout>
