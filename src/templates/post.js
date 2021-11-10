@@ -40,6 +40,7 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
+                        <Commento id={uniquePostId} /> 
                     </article>
                 </div>
             </Layout>
