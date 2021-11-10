@@ -66,9 +66,6 @@ module.exports = {
                     ? ghostConfig.development
                     : ghostConfig.production,
         },
-        {
-            resolve: `gatsby-theme-ghost-commento`,
-        },
         /**
          *  Utility Plugins
          */
