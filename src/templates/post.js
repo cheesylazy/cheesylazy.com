@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
+import Commento from "../components/commento"
 /**
 * Single post view (/:slug)
 *
@@ -39,9 +40,8 @@ const Post = ({ data, location }) => {
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
                         </section>
+                        <Commento id={data.strapiArticles.id} />
                     </article>
-                    <script defer src="https://cdn.commento.io/js/commento.js"></script>
-                    <div id="commento"></div>
                 </div>
             </Layout>
         </>
