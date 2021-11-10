@@ -41,7 +41,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    <Commento id={data.strapiArticles.id} />
+                    <Commento />
                 </div>
             </Layout>
         </>
