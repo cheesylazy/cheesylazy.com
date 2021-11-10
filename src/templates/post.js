@@ -6,7 +6,6 @@ import { Helmet } from 'react-helmet'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
-import React from 'commento'
 /**
 * Single post view (/:slug)
 *
