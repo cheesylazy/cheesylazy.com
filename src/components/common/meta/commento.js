@@ -1,20 +1,42 @@
-function Comments() {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://cdn.commento.io/js/commento.js';
-        script.async = true;
+import React, {useEffect} from 'react';
 
-        const comments = document.getElementById('comments-container');
-        if (comments)
-            comments.appendChild(script);
-    }, []);
+// Helper to add scripts to our page
+const insertScript = (src, id, parentElement) => {
+  const script = window.document.createElement('script');
+  script.async = true;
+  script.src   = src;
+  script.id    = id;
+  parentElement.appendChild(script);
 
-    return (
-        <>
-            <div id="comments-container"></div>
-            <div id="commento"></div>
-        </>
-    );
-}
+  return script;
+};
 
-export default Comments;
+// Helper to remove scripts from our page
+const removeScript = (id, parentElement) => {
+  const script = window.document.getElementById(id);
+  if (script) {
+    parentElement.removeChild(script);
+  }
+};
+
+// The actual component
+const Commento = ({id}) => {
+  useEffect(() => {
+    // If there's no window there's nothing to do for us
+    if (! window) {
+      return;
+    }
+    const document = window.document;
+    // In case our #commento container exists we can add our commento script
+    if (document.getElementById('commento')) {
+      insertScript(`<https://cdn.commento.io>/js/commento.js`, `commento-script`, document.body);
+    }
+
+    // Cleanup; remove the script from the page
+    return () => removeScript(`commento-script`, document.body);
+  }, [id]);
+
+  return <div id={`commento`} />
+};
+
+export default Commento;
