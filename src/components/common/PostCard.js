@@ -3,27 +3,6 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Tags } from '@tryghost/helpers-gatsby'
 import { readingTime as readingTimeHelper } from '@tryghost/helpers'
-import React, { useEffect } from 'react';
-
-const Comments = () => {
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.src = 'https://cdn.commento.io/js/commento.js';
-        script.async = true;
-
-        const comments = document.getElementById('comments-container');
-        if (comments) comments.appendChild(script);
-    }, []);
-
-    return (
-        <>
-            <div id="comments-container"></div>
-            <div id="commento"></div>
-        </>
-    );
-};
-
-export default Comments;
 
 const PostCard = ({ post }) => {
     const url = `/${post.slug}/`
