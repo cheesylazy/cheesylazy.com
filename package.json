@@ -50,6 +50,7 @@
     "gatsby-plugin-sharp": "3.12.0",
     "gatsby-source-filesystem": "3.12.0",
     "gatsby-source-ghost": "4.2.4",
+    "gatsby-theme-ghost-commento": "^2.0.0",
     "gatsby-theme-ghost-dark-mode": "^2.0.0",
     "gatsby-transformer-sharp": "3.12.0",
     "lodash": "4.17.21",
