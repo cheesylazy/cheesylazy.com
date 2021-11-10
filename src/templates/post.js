@@ -40,7 +40,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
                     </article>
-                    <Comments/>
+                    <Commento id={uniquePostId} />
                 </div>
             </Layout>
         </>
